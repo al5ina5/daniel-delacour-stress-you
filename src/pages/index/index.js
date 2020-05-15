@@ -11,7 +11,7 @@ class Index extends React.Component {
         super(props)
 
         this.state = {
-            sound: false
+            loading: true
         }
     }
 
@@ -56,13 +56,18 @@ class Index extends React.Component {
             <div ref={this.constraintsRef} className={styles.landing}>
                 <Particles className={styles.particles} params={ParticlesConfig} />
                 <div className={styles.notice}>[Click Anywhere]</div>
-                <i class={`${styles.music} fas ${this.state.music ? 'fa-volume-up' : 'fa-volume-mute'}`} onClick={this.toggleMusic} />
+                <i class={`${styles.music} fas ${this.state.loading ? 'fa-circle-notch fa-spin' : this.state.music ? 'fa-volume-up' : 'fa-volume-mute'}`} onClick={this.toggleMusic} />
                 {this.renderHeart()}
                 <noscript>
                     <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
                 </noscript>
                 <Sound
                     autoLoad={true}
+                    onLoad={() => {
+                        this.setState({
+                            loading: false
+                        })
+                    }}
                     url="/audio/stress-you-preview.mp3"
                     playStatus={this.state.music ? Sound.status.PLAYING : Sound.status.STOPPED}
                 />
