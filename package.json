@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "framer-motion": "^1.10.3",
     "next": "^9.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-particles-js": "^3.2.1",
-    "react-tilt": "^0.1.4",
     "reset-css": "^5.0.1",
     "sass": "^1.26.5"
   }
