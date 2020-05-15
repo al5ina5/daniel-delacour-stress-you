@@ -11,15 +11,16 @@ class Index extends React.Component {
 
     render() {
         return (
-            <div class={styles.landing}>
+            <div className={styles.landing}>
                 <Particles className={styles.particles} params={ParticlesConfig} />
                 <div className={styles.notice}>[Click Anywhere]</div>
                 <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
 
                 <div className={styles.socials}>
-                    <a href="# "><i className="fab fa-apple"></i></a>
-                    <a href="# "><i className="fab fa-spotify"></i></a>
-                    <a href="# "><i className="fab fa-soundcloud"></i></a>
+                    <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-apple"></i></a>
+                    <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a>
+                    <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-soundcloud"></i></a>
+                    <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
                 </div>
             </div>
         )
