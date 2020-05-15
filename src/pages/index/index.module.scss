@@ -1,0 +1,33 @@
+.landing {
+    height: 100%;
+    background-color: rgb(41, 43, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .particles {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .heart {
+        width: 70%;
+        max-width: 400px;
+        animation: float 2s ease-in-out infinite;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
