@@ -32,9 +32,6 @@ class Index extends React.Component {
                     }}>
                     <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
                 </motion.div>
-                <noscript>
-                    <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
-                </noscript>
             </>
         }
     }
@@ -51,6 +48,9 @@ class Index extends React.Component {
                 <Particles className={styles.particles} params={ParticlesConfig} />
                 <div className={styles.notice}>[Click Anywhere]</div>
                 {this.renderHeart()}
+                <noscript>
+                    <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
+                </noscript>
                 <div className={styles.footer}>
                     <h1>Stress You by Daniel Delacour</h1>
                     <div className={styles.socials}>
