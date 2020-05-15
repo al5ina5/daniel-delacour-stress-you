@@ -60,21 +60,18 @@
 
     .heart {
         animation: heart 2s ease-in-out infinite;
-        pointer-events: none;
     }
 
     @keyframes heart {
         0% {
-            transform: translatey(0px);
-            opacity: 0.8;
+            transform: translateY(0);
         }
         50% {
-            transform: translatey(-20px);
-            opacity: 1;
+            transform: translateY(30px);
+            opacity: 0.8;
         }
         100% {
-            transform: translatey(0px);
-            opacity: 0.8;
+            transform: translateY(0);
         }
     }
 

@@ -19,27 +19,29 @@ class Index extends React.Component {
     renderHeart = () => {
         if (this.state.show) {
             return <>
-                <motion.img
-                    img src="/img/stress-you-heart.png"
-                    alt="Stress You Heart"
-                    style={{
-                        width: '70%',
-                        maxWidth: '500px'
-                    }}
-                    drag={true}
-                    dragConstraints={{
-                        top: -(window.innerHeight / 2),
-                        bottom: window.innerHeight / 2,
-                        left: -(window.innerWidth / 2),
-                        right: window.innerWidth / 2
-                    }}
-                    initial={{ rotate: 180, scale: 0 }}
-                    animate={{ rotate: 0, scale: 1 }}
-                    transition={{
-                        type: "spring",
-                        stiffness: 10,
-                        damping: 500
-                    }} />
+                <div className={styles.heart}>
+                    <motion.img
+                        src="/img/stress-you-heart.png"
+                        alt="Stress You Heart"
+                        style={{
+                            width: '70%',
+                            maxWidth: '700px'
+                        }}
+                        drag={true}
+                        dragConstraints={{
+                            top: -(window.innerHeight / 2),
+                            bottom: window.innerHeight / 2,
+                            left: -(window.innerWidth / 2),
+                            right: window.innerWidth / 2
+                        }}
+                        initial={{ rotate: 270, scale: 0 }}
+                        animate={{ rotate: 0, scale: 1 }}
+                        transition={{
+                            type: 'spring',
+                            stiffness: 10,
+                            damping: 500
+                        }} />
+                </div>
                 {/* <img src="/img/stress-you-heart.png" alt="" className={styles.heart} /> */}
                 {/* </motion.div> */}
             </>
@@ -66,7 +68,9 @@ class Index extends React.Component {
                 <i className={`${styles.music} fas ${this.state.loading ? 'fa-circle-notch fa-spin' : this.state.music ? 'fa-volume-up' : 'fa-volume-mute'}`} onClick={this.toggleMusic} />
                 {this.renderHeart()}
                 <noscript>
-                    <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
+                    <div class={styles.heart}>
+                        <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
+                    </div>
                 </noscript>
                 <Sound
                     autoLoad={true}
