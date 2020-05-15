@@ -3,7 +3,6 @@ import Head from 'next/head'
 const Meta = () => (
     <Head>
         <title>Stress You</title>
-        <meta name="viewport" content="width=device-width, maximum-scale=1" />
         <meta name="description" content="Stress You by Daniel Delacour is out now. Streaming everywhere." />
         <meta property="og:type" content="website" />
         <meta name="og:title" property="og:title" content="Stress You" />
