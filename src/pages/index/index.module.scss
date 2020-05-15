@@ -48,12 +48,13 @@
     }
 
     .heart {
-        z-index: 99;
-        width: 70%;
-        max-width: 400px;
+        max-width: 70%;
         animation: heart 2s ease-in-out infinite;
         margin-bottom: 3rem;
-        pointer-events: none;
+    }
+
+    .heart img {
+        width: 100%;
     }
 
     @keyframes heart {
@@ -71,21 +72,32 @@
         }
     }
 
-    .socials {
-        z-index: 99;
-        font-size: 1.8rem;
-        display: flex;
-        flex-wrap: wrap;
+    .footer {
+        position: absolute;
+        bottom: 2rem;
 
-        a {
-            color: inherit;
-            margin: 0 1rem;
-            opacity: 0.8;
-            transition: 0.3s ease all;
+        h1 {
+            margin-bottom: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
         }
 
-        a:hover {
-            opacity: 1;
+        .socials {
+            z-index: 99;
+            font-size: 1.8rem;
+            display: flex;
+            flex-wrap: wrap;
+
+            a {
+                color: inherit;
+                margin: 0 1rem;
+                opacity: 0.8;
+                transition: 0.3s ease all;
+            }
+
+            a:hover {
+                opacity: 1;
+            }
         }
     }
 }

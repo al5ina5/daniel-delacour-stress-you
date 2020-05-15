@@ -19,6 +19,12 @@ class Index extends React.Component {
                 <div className={styles.notice}>[Click Anywhere]</div>
                 <motion.div
                     drag={true}
+                    dragConstraints={{
+                        top: 0,
+                        bottom: 100,
+                        left: 0,
+                        right: 100
+                    }}
                     initial={{ rotate: 180, scale: 0 }}
                     animate={{ rotate: 0, scale: 1 }}
                     transition={{
@@ -28,11 +34,14 @@ class Index extends React.Component {
                     }}>
                     <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
                 </motion.div>
-                <div className={styles.socials}>
-                    <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-apple"></i></a>
-                    <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a>
-                    <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-soundcloud"></i></a>
-                    <a href="# " target="_blank" ><i className="fab fa-youtube"></i></a>
+                <div className={styles.footer}>
+                    <h1>Stress You by Daniel Delacour</h1>
+                    <div className={styles.socials}>
+                        <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-apple"></i></a>
+                        <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a>
+                        <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-soundcloud"></i></a>
+                        <a href="# " target="_blank" ><i className="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
         )
