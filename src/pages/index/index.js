@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import Particles from 'react-particles-js'
 import { motion } from 'framer-motion'
 import Sound from 'react-sound'
+import Typist from 'react-typist'
 
 import styles from './index.module.scss'
 import ParticlesConfig from './particles.json'
@@ -88,7 +89,8 @@ class Index extends React.Component {
                     playStatus={this.state.music ? Sound.status.PLAYING : Sound.status.STOPPED}
                 />
                 <div className={styles.footer}>
-                    <h1>Stress You by Daniel Delacour</h1>
+                    <Typist cursor={{ show: false }}><h1>Stress You by Daniel Delacour</h1></Typist>
+                    <noscript><h1>Stress You by Daniel Delacour</h1></noscript>
                     <div className={styles.socials}>
                         <a href="# " aria-label="Apple Music" target="_blank" rel="noopener noreferrer"><i className="fab fa-apple"></i></a>
                         <a href="# " aria-label="Spotify" target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a>
