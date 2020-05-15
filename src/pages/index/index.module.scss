@@ -21,6 +21,7 @@
         animation: notice 2s ease-in-out infinite;
         text-transform: lowercase;
         pointer-events: none;
+        z-index: 99;
     }
 
     @keyframes notice {
@@ -48,6 +49,7 @@
     }
 
     .heart {
+        height: auto;
         max-width: 70%;
         animation: heart 2s ease-in-out infinite;
         margin-bottom: 3rem;
