@@ -32,6 +32,9 @@ class Index extends React.Component {
                     }}>
                     <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
                 </motion.div>
+                <noscript>
+                    <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
+                </noscript>
             </>
         }
     }

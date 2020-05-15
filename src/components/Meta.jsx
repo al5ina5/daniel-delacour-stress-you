@@ -15,11 +15,12 @@ const Meta = () => (
         <meta name="twitter:description" content="Now streaming everywhere." />
         <meta name="twitter:site" content="https://danieldelacour.com" />
         <meta name="twitter:creator" content="@danieldelacour" />
-        <link rel="icon" type="image/png" href="/img/favicon.ico" />
+        <link rel="icon" type="image/png" href="/img/favicon.png" />
         <link rel="apple-touch-icon" href="/img/favicon.png" />
         <meta property="og:image" content="/img/og-image.jpg" />
         <meta name="twitter:image" content="https://daniel-delacour-stress-you.now.sh/img/og-image-square.jpg" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     </Head>
 )
+
 export default Meta
