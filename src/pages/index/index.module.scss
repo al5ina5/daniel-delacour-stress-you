@@ -7,10 +7,11 @@
     text-align: center;
 
     .particles {
-        height: 100%;
-        width: 100%;
+        height: 120vh;
+        width: 120vw;
         position: absolute;
-        top: 0;
+        top: -10vh;
+        left: -10vw;
     }
 
     .notice {
