@@ -11,7 +11,7 @@ class Index extends React.Component {
         super(props)
 
         this.state = {
-            loading: true
+            loading: false
         }
     }
 
@@ -66,6 +66,16 @@ class Index extends React.Component {
                     onLoad={() => {
                         this.setState({
                             loading: false
+                        })
+                    }}
+                    onStop={() => {
+                        this.setState({
+                            music: false
+                        })
+                    }}
+                    onFinishedPlaying={() => {
+                        this.setState({
+                            music: false
                         })
                     }}
                     url="/audio/stress-you-preview.mp3"
