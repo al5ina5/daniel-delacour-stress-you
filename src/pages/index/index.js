@@ -20,10 +20,10 @@ class Index extends React.Component {
                 <motion.div
                     drag={true}
                     dragConstraints={{
-                        top: 0,
-                        bottom: 100,
-                        left: 0,
-                        right: 100
+                        top: -(window.innerHeight / 2),
+                        bottom: window.innerHeight / 2,
+                        left: -(window.innerWidth / 2),
+                        right: window.innerWidth / 2
                     }}
                     initial={{ rotate: 180, scale: 0 }}
                     animate={{ rotate: 0, scale: 1 }}

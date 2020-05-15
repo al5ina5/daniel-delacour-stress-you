@@ -51,6 +51,7 @@
         max-width: 70%;
         animation: heart 2s ease-in-out infinite;
         margin-bottom: 3rem;
+        pointer-events: none;
     }
 
     .heart img {
