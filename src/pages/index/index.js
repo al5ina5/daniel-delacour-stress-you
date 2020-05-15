@@ -56,6 +56,7 @@ class Index extends React.Component {
                         <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-soundcloud"></i></a>
                         <a href="# " target="_blank" ><i className="fab fa-youtube"></i></a>
                     </div>
+                    <div className={styles.credit}>Designed by <a href="https://sebastianalsina.com">Sebastian Alsina</a></div>
                 </div>
             </div>
         )

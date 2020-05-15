@@ -76,6 +76,7 @@
     .footer {
         position: absolute;
         bottom: 2rem;
+        padding: 0 2rem;
 
         h1 {
             margin-bottom: 1rem;
@@ -88,6 +89,8 @@
             font-size: 1.8rem;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1rem;
 
             a {
                 color: inherit;
@@ -98,6 +101,15 @@
 
             a:hover {
                 opacity: 1;
+            }
+        }
+
+        .credit {
+            font-size: 0.5rem;
+            opacity: 0.5;
+
+            a {
+                color: inherit;
             }
         }
     }
