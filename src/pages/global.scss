@@ -17,6 +17,8 @@ html,
 }
 
 *,
-*:focus {
+*:focus,
+*:active,
+*:focus:active {
     outline: none;
 }

@@ -69,14 +69,14 @@
 
     @keyframes heart {
         0% {
-            transform: translateY(0);
+            transform: translateY(-15px);
         }
         50% {
-            transform: translateY(30px);
+            transform: translateY(15px);
             opacity: 0.8;
         }
         100% {
-            transform: translateY(0);
+            transform: translateY(-15px);
         }
     }
 

@@ -84,13 +84,14 @@ class Index extends React.Component {
                         this.setState({
                             music: false
                         })
+                        alert('Test')
                     }}
                     url="/audio/stress-you-preview.mp3"
                     playStatus={this.state.music ? Sound.status.PLAYING : Sound.status.STOPPED}
                 />
                 <div className={styles.footer}>
-                    <Typist cursor={{ show: false }}><h1>Stress You by Daniel Delacour</h1></Typist>
-                    <noscript><h1>Stress You by Daniel Delacour</h1></noscript>
+                    <Typist cursor={{ show: false }}><h1>Stress You by Daniel Delacour.</h1></Typist>
+                    <noscript><h1>Stress You by Daniel Delacour.</h1></noscript>
                     <div className={styles.socials}>
                         <a href="# " aria-label="Apple Music" target="_blank" rel="noopener noreferrer"><i className="fab fa-apple"></i></a>
                         <a href="# " aria-label="Spotify" target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a>
