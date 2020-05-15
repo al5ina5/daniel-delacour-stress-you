@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import Particles from 'react-particles-js'
 import { motion } from 'framer-motion'
+import Sound from 'react-sound'
 
 import styles from './index.module.scss'
 import ParticlesConfig from './particles.json'
@@ -9,7 +10,9 @@ class Index extends React.Component {
     constructor(props) {
         super(props)
 
-        this.state = {}
+        this.state = {
+            sound: false
+        }
     }
 
     renderHeart = () => {
@@ -42,15 +45,26 @@ class Index extends React.Component {
         })
     }
 
+    toggleMusic = () => {
+        this.setState({
+            music: this.state.music ? false : true
+        })
+    }
+
     render() {
         return (
             <div ref={this.constraintsRef} className={styles.landing}>
                 <Particles className={styles.particles} params={ParticlesConfig} />
                 <div className={styles.notice}>[Click Anywhere]</div>
+                <i class={`${styles.music} fas ${this.state.music ? 'fa-volume-up' : 'fa-volume-mute'}`} onClick={this.toggleMusic} />
                 {this.renderHeart()}
                 <noscript>
                     <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
                 </noscript>
+                <Sound
+                    url="/audio/stress-you-preview.mp3"
+                    playStatus={this.state.music ? Sound.status.PLAYING : Sound.status.STOPPED}
+                />
                 <div className={styles.footer}>
                     <h1>Stress You by Daniel Delacour</h1>
                     <div className={styles.socials}>

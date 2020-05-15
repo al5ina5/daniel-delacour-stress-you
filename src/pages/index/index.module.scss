@@ -24,6 +24,15 @@
         z-index: 99;
     }
 
+    .music {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
     @keyframes notice {
         0% {
             opacity: 0.3;
