@@ -11,7 +11,7 @@ class Index extends React.Component {
         super(props)
 
         this.state = {
-            loading: false
+            loading: true
         }
     }
 
@@ -63,11 +63,11 @@ class Index extends React.Component {
                 </noscript>
                 <Sound
                     autoLoad={true}
-                    // onLoad={() => {
-                    //     this.setState({
-                    //         loading: false
-                    //     })
-                    // }}
+                    onLoad={() => {
+                        this.setState({
+                            loading: false
+                        })
+                    }}
                     url="/audio/stress-you-preview.mp3"
                     playStatus={this.state.music ? Sound.status.PLAYING : Sound.status.STOPPED}
                 />
