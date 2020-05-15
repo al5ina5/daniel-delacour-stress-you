@@ -18,7 +18,13 @@ class Index extends React.Component {
     renderHeart = () => {
         if (this.state.show) {
             return <>
-                <motion.div
+                <motion.img
+                    img src="/img/stress-you-heart.png"
+                    alt="Stress You Heart"
+                    style={{
+                        width: '70%',
+                        maxWidth: '500px'
+                    }}
                     drag={true}
                     dragConstraints={{
                         top: -(window.innerHeight / 2),
@@ -32,9 +38,9 @@ class Index extends React.Component {
                         type: "spring",
                         stiffness: 10,
                         damping: 500
-                    }}>
-                    <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
-                </motion.div>
+                    }} />
+                {/* <img src="/img/stress-you-heart.png" alt="" className={styles.heart} /> */}
+                {/* </motion.div> */}
             </>
         }
     }
@@ -56,7 +62,7 @@ class Index extends React.Component {
             <div ref={this.constraintsRef} className={styles.landing}>
                 <Particles className={styles.particles} params={ParticlesConfig} />
                 <div className={styles.notice}>[Click Anywhere]</div>
-                <i class={`${styles.music} fas ${this.state.loading ? 'fa-circle-notch fa-spin' : this.state.music ? 'fa-volume-up' : 'fa-volume-mute'}`} onClick={this.toggleMusic} />
+                <i className={`${styles.music} fas ${this.state.loading ? 'fa-circle-notch fa-spin' : this.state.music ? 'fa-volume-up' : 'fa-volume-mute'}`} onClick={this.toggleMusic} />
                 {this.renderHeart()}
                 <noscript>
                     <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
@@ -84,10 +90,10 @@ class Index extends React.Component {
                 <div className={styles.footer}>
                     <h1>Stress You by Daniel Delacour</h1>
                     <div className={styles.socials}>
-                        <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-apple"></i></a>
-                        <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a>
-                        <a href="# " target="_blank" rel="noopener noreferrer"><i className="fab fa-soundcloud"></i></a>
-                        <a href="# " target="_blank" ><i className="fab fa-youtube"></i></a>
+                        <a href="# " aria-label="Apple Music" target="_blank" rel="noopener noreferrer"><i className="fab fa-apple"></i></a>
+                        <a href="# " aria-label="Spotify" target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a>
+                        <a href="# " aria-label="SoundCloud" target="_blank" rel="noopener noreferrer"><i className="fab fa-soundcloud"></i></a>
+                        <a href="# " aria-label="YouTube" target="_blank" ><i className="fab fa-youtube"></i></a>
                     </div>
                     <div className={styles.credit}>Designed by <a href="https://sebastianalsina.com">Sebastian Alsina</a></div>
                 </div>
