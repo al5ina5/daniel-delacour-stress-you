@@ -23,10 +23,6 @@ class Index extends React.Component {
                     <motion.img
                         src="/img/stress-you-heart.png"
                         alt="Stress You Heart"
-                        style={{
-                            width: '70%',
-                            maxWidth: '700px'
-                        }}
                         drag={true}
                         dragConstraints={{
                             top: -(window.innerHeight / 2),

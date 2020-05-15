@@ -62,6 +62,11 @@
         animation: heart 2s ease-in-out infinite;
     }
 
+    .heart img {
+        width: 70%;
+        max-width: 700px;
+    }
+
     @keyframes heart {
         0% {
             transform: translateY(0);
