@@ -12,9 +12,9 @@ const Meta = () => (
         <meta property="og:url" content="https://danieldelacour.com" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Stress You" />
-        <meta name="twitter:description" content="Now streaming everywhere," />
+        <meta name="twitter:description" content="Now streaming everywhere." />
         <meta name="twitter:site" content="https://danieldelacour.com" />
-        <meta name="twitter:creator" content="@danieldelcour" />
+        <meta name="twitter:creator" content="@danieldelacour" />
         <link rel="icon" type="image/png" href="/img/favicon.ico" />
         <link rel="apple-touch-icon" href="/img/favicon.png" />
         <meta property="og:image" content="/img/og-image.jpg" />
