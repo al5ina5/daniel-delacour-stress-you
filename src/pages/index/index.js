@@ -27,8 +27,8 @@ class Index extends React.Component {
                     animate={{ rotate: 0, scale: 1 }}
                     transition={{
                         type: "spring",
-                        stiffness: 100,
-                        damping: 100
+                        stiffness: 10,
+                        damping: 500
                     }}>
                     <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
                 </motion.div>
