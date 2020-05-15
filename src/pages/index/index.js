@@ -62,6 +62,7 @@ class Index extends React.Component {
                     <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
                 </noscript>
                 <Sound
+                    autoLoad={true}
                     url="/audio/stress-you-preview.mp3"
                     playStatus={this.state.music ? Sound.status.PLAYING : Sound.status.STOPPED}
                 />
