@@ -1,10 +1,13 @@
 {
     "particles": {
         "number": {
-            "value": 160,
+            "value": 320,
             "density": {
                 "enable": false
             }
+        },
+        "color": {
+            "value": "rgb(243, 123, 221)"
         },
         "size": {
             "value": 3,
