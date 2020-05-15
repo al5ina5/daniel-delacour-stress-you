@@ -13,7 +13,13 @@ class Index extends React.Component {
         return (
             <div class={styles.landing}>
                 <Particles className={styles.particles} params={ParticlesConfig} />
-                <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
+                <img src="/img/stress-you-heart-shadow.png" alt="" className={styles.heart} />
+
+                <div className={styles.socials}>
+                    <a href="# "><i className="fab fa-apple"></i></a>
+                    <a href="# "><i className="fab fa-spotify"></i></a>
+                    <a href="# "><i className="fab fa-soundcloud"></i></a>
+                </div>
             </div>
         )
     }

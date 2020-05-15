@@ -32,19 +32,15 @@
             },
             "onclick": {
                 "enable": true,
-                "mode": "repulse"
+                "mode": "bubble"
             }
         },
         "modes": {
             "bubble": {
                 "distance": 250,
-                "duration": 2,
-                "size": 0,
-                "opacity": 0
-            },
-            "repulse": {
-                "distance": 400,
-                "duration": 4
+                "duration": 1,
+                "size": 20,
+                "opacity": 1
             }
         }
     }
