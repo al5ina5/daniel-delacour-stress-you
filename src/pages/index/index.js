@@ -12,11 +12,9 @@ class Index extends React.Component {
         this.state = {}
     }
 
-    render() {
-        return (
-            <div ref={this.constraintsRef} className={styles.landing}>
-                <Particles className={styles.particles} params={ParticlesConfig} />
-                <div className={styles.notice}>[Click Anywhere]</div>
+    renderHeart = () => {
+        if (this.state.show) {
+            return <>
                 <motion.div
                     drag={true}
                     dragConstraints={{
@@ -34,6 +32,22 @@ class Index extends React.Component {
                     }}>
                     <img src="/img/stress-you-heart.png" alt="" className={styles.heart} />
                 </motion.div>
+            </>
+        }
+    }
+
+    componentDidMount() {
+        this.setState({
+            show: true
+        })
+    }
+
+    render() {
+        return (
+            <div ref={this.constraintsRef} className={styles.landing}>
+                <Particles className={styles.particles} params={ParticlesConfig} />
+                <div className={styles.notice}>[Click Anywhere]</div>
+                {this.renderHeart()}
                 <div className={styles.footer}>
                     <h1>Stress You by Daniel Delacour</h1>
                     <div className={styles.socials}>
