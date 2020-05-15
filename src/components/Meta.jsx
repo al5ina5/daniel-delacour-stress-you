@@ -10,7 +10,7 @@ const Meta = () => (
         <meta name="og:description" property="og:description" content="Stress You by Daniel Delacour is out now. Streaming everywhere." />
         <meta property="og:site_name" content="Stress You" />
         <meta property="og:url" content="https://danieldelacour.com" />
-        <meta name="twitter:card" content="summary_large" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Stress You" />
         <meta name="twitter:description" content="Now streaming everywhere," />
         <meta name="twitter:site" content="https://danieldelacour.com" />
