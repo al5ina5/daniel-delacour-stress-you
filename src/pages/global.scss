@@ -21,4 +21,5 @@ html,
 *:active,
 *:focus:active {
     outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
